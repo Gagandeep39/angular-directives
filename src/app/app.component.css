@@ -1,3 +1,7 @@
 .odd{
     color: red;
 }
+/* not supported n angular */
+div:hover{
+    color: black;
+}
