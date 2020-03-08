@@ -6,6 +6,7 @@ import { BasicHighlightDirective } from './basic-highlight/basic-highlight.direc
 import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
 import { HostbindingHighlightDirective } from './hostbinding-highlight/hostbinding-highlight.directive';
 import { ParameterizedHighlightDirective } from './parameterized-highlight/parameterized-highlight.directive';
+import { StructuralDirectiveDirective } from './structural-directive/structural-directive.directive';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ParameterizedHighlightDirective } from './parameterized-highlight/param
     BasicHighlightDirective,
     BetterHighlightDirective,
     HostbindingHighlightDirective,
-    ParameterizedHighlightDirective
+    ParameterizedHighlightDirective,
+    StructuralDirectiveDirective
   ],
   imports: [
     BrowserModule
