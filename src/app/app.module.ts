@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
 import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
 import { HostbindingHighlightDirective } from './hostbinding-highlight/hostbinding-highlight.directive';
+import { ParameterizedHighlightDirective } from './parameterized-highlight/parameterized-highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     BasicHighlightDirective,
     BetterHighlightDirective,
-    HostbindingHighlightDirective
+    HostbindingHighlightDirective,
+    ParameterizedHighlightDirective
   ],
   imports: [
     BrowserModule

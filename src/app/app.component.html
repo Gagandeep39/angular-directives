@@ -21,9 +21,11 @@
   </ul>
 
   <div>Custome Directive To Highlight the data
-    <p appBasicHighlight>Testing</p>
-    <p appBetterHighlight>Testing</p>
-    <p appHostbindingHighlight>Testing</p>
+    <p appBasicHighlight>HighLight using Only ElementRef</p>
+    <p appBetterHighlight>Highlight using Renderer and ElementRef, Hostlistener (Better mplementation, dynamic)</p>
+    <p appHostbindingHighlight>Highlisght using Hosstbinding, Hostlistener</p>
+    <p appParameterizedHighlight [defaultColor]="'lightgreen'" [highlightColor]="'green'">Highlight by passing custom colors</p>
+    <p appParameterizedHighlight [highlightColor]="'green'">Highlight by passing sigle color</p>
   </div>
 
  </div>
