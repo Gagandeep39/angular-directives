@@ -29,16 +29,35 @@
   </ul>
 
   <div>Custome Directive To Highlight the data
+    <!-- Custom directive using Element Ref  -->
     <p appBasicHighlight>HighLight using Only ElementRef</p>
+    <!-- Custom directive using ElementRef, Renderer2  -->
     <p appBetterHighlight>Highlight using Renderer and ElementRef, Hostlistener (Better mplementation, dynamic)</p>
+    <!-- Custom directive using HostBinding  -->
     <p appHostbindingHighlight>Highlisght using Hosstbinding, Hostlistener</p>
+    <!-- Custom directive with parameter  -->
     <p appParameterizedHighlight [defaultColor]="'lightgreen'" [highlightColor]="'green'">Highlight by passing custom
       colors</p>
+    <!-- Cusom directive with using only one parameter  -->
     <p appParameterizedHighlight [highlightColor]="'green'">Highlight by passing sigle color</p>
   </div>
 
+  <!-- Custom structural directive  -->
   <div *appStructuralDirective="onlyOdd">
     Displayed when Condition is False
   </div>
 
-</div>
+  <!-- Switch Case  -->
+  <button (click)="toggleSwitch()" class="btn btn-success">Toggle Switch case</button>
+  <div [ngSwitch]="value">
+    <div *ngSwitchCase="1">Case 1</div>
+    <div *ngSwitchCase="2">Case 2</div>
+    <div *ngSwitchCase="3">Case 3</div>
+    <div *ngSwitchCase="4">Case 4</div>
+    <div *ngSwitchCase="5">Case 5</div>
+    <div *ngSwitchCase="6">Case 6</div>
+    <div *ngSwitchCase="7">Case 7</div>
+    <div *ngSwitchCase="8">Case 8</div>
+    <div *ngSwitchCase="9">Case 9</div>
+    <div *ngSwitchDefault>Default Output</div>
+  </div>
